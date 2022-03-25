@@ -21,6 +21,7 @@ export default function Projects(props) {
               <div className="project">
                 <img src={Image}></img>
                 <h1 className="project">{project.title}</h1>
+                <p className="project">{project.slogan}</p>
                 <p className="project">{project.description}</p>
               </div>
             </a>
