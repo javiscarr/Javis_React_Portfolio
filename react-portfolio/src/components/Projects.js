@@ -1,34 +1,47 @@
 import React from "react";
 import { projects } from "../data.js";
+import {thrve} from "../images/thve.jpg";
 
-export default function Projects(props) {
+function Projects() {
   return (
-    <section id="gallery">
-      <div className="text-center">
-        <div>
-          <h1 className="m-0">My Gallery</h1>
-        </div>
+    <section id="myGallery" className="gallery">
 
-        <div>
-          {projects.map((project) => (
-            <a
-              href={project.heroku || project.github}
-              key={project}
-              className="m-2 p-2 text-decoration-none link-secondary rounded"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="project">
-                <img src={Image}></img>
-                <h1 className="project">{project.title}</h1>
-                <p className="project">{project.slogan}</p>
-                <p className="project">{project.description}</p>
-              </div>
+
+<div id="gallery">
+    <h2>My Gallery</h2>
+    <p>Take a dive into some of the creative work I've recently done.</p>
+</div>
+
+
+<div id="galleryArea">
+
+<section>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="column">
+          <div class="contents">
+            <h3>THRVE Application</h3>
+            <h5>Click image for deployed application</h5>
+            <a href="https://thrve-app.herokuapp.com/login" alt="THRiVE">
+              <img src={thrve} alt="THRiVE App" style="width:100%">
             </a>
-          ))}
-        </div>
-      </div>
-      <br></br>
-    </section>
+
+
+            <a href="https://github.com/jesshaff/thrve-app" class="repository">
+              <h3>GitHub Repository</h3>
+            </a>
+          </div>
+         </div>
+    </div>
+</section>
+
+
+    
+   
+   
   );
 }
+
+export default Project;
