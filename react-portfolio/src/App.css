@@ -107,6 +107,12 @@ nav a:hover {
 
 /* background image properties*/
 
+#allAboard {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
 #tech {
   height: 800px;
   width: 100%;
@@ -138,8 +144,15 @@ nav a:hover {
   text-align: justify;
 }
 
+/* Images */
 #aboutMe img {
   max-width: 500px;
+  width: 100%;
+}
+.projectPics {
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
 }
 
 section {
@@ -157,17 +170,39 @@ article p {
 }
 
 /* card formatting and styling*/
+#gallery {
+  align-items: center;
+  text-align: center;
+}
 
 #gallery h2 {
   text-align: center;
   color: var(--emerald);
   font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
 }
-
+#gallery h1 {
+  text-align: center;
+  color: var(--emerald);
+  font-family: "Courier New", Courier, monospace;
+}
+#gallery h5 {
+  text-align: center;
+  color: var(--emerald);
+  font-family: "Courier New", Courier, monospace;
+}
 #gallery p {
   text-align: center;
   color: var(--emerald);
   font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#gallery a {
+  text-align: center;
+  color: var(--emerald);
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
 }
 #carousel {
   align-items: center;
@@ -176,6 +211,7 @@ article p {
 }
 
 .card2 {
+  align-items: center;
   border-style: line;
   border-width: 1px;
   border-radius: 10px;
@@ -183,7 +219,10 @@ article p {
   flex: 0 400px;
   margin-top: 50px;
 }
-
+.links {
+  align-items: center;
+  margin-left: 140px;
+}
 article h2 {
   text-align: center;
 }
@@ -262,7 +301,7 @@ footer {
 
 .contents {
   background-color: var(--lite);
-  padding: 10px;
+  padding: 25px;
   text-align: center;
   text-decoration: none;
 }
@@ -277,6 +316,11 @@ footer {
 #deploy {
   border-radius: 10px;
 }
+
+#contactInfo h2 {
+  text-align: center;
+}
+/* contact information*/
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
