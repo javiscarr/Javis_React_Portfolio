@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../Javis Resume.pdf";
+import resume from "../Resume 2022.pdf";
 
 function Header() {
   return (
