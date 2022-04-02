@@ -90,6 +90,15 @@ nav {
   justify-content: space-evenly;
   justify-content: flex-end;
   background-color: var(--maroon);
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.container {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: list-item;
 }
 
 nav a {
@@ -130,8 +139,8 @@ nav a:hover {
 #myContent {
   padding: 20px;
   margin: 20px;
-  display: flex;
-  display: block;
+
+  display: inline-flexbox;
 }
 
 #myContent h2 {
@@ -146,8 +155,12 @@ nav a:hover {
 
 /* Images */
 #aboutMe img {
-  max-width: 500px;
-  width: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 .projectPics {
   max-width: 600px;
@@ -204,11 +217,6 @@ article p {
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
 }
-#carousel {
-  align-items: center;
-  margin: 40px;
-  size: 75px;
-}
 
 .card2 {
   align-items: center;
@@ -219,10 +227,7 @@ article p {
   flex: 0 400px;
   margin-top: 50px;
 }
-.links {
-  align-items: center;
-  margin-left: 140px;
-}
+
 article h2 {
   text-align: center;
 }
@@ -256,6 +261,9 @@ article a {
   justify-content: center;
 }
 
+#contactInfo img {
+  align-content: center;
+}
 /* formatting div id*/
 
 #myDiv {
@@ -321,6 +329,20 @@ footer {
   text-align: center;
 }
 /* contact information*/
+
+#phone {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+#logo {
+  align-items: center;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {

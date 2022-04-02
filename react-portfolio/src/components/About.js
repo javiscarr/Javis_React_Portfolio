@@ -4,8 +4,9 @@ import chicago from "../../src/images/chicago.jpg";
 function About() {
   return (
     <section id="aboutMe">
-      <div id="myImage"></div>
-      <img src={chicago} alt="Javis in Chicago" className="card-img-top" />
+      <div id="myImage">
+        <img src={chicago} alt="Javis in Chicago" className="card-img-top" />
+      </div>
       <div id="myContent">
         <h2>About Me</h2>
         <p>Hello, I'm Javis </p>
