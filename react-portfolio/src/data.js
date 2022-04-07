@@ -12,7 +12,7 @@ export const projects = [
     image: thrve,
   },
   {
-    title: "You Luck Dog!",
+    title: "You Lucky Dog!",
     heroku: "https://jddlwlr.github.io/You-Lucky-Dog/",
     github: "https://github.com/jddlwlr/You-Lucky-Dog",
     image: luckydog,
