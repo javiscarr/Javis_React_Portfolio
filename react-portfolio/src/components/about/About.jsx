@@ -1,15 +1,26 @@
 import React from "react";
-import chicago from "../../src/images/chicago.jpg";
+import './about.css'
+import chicago from '../../assets/chicago.jpg'
 
-function About() {
+const About = () => {
   return (
-    <section id="aboutMe">
-      <div id="myImage">
-        <img src={chicago} alt="Javis in Chicago" className="card-img-top" />
+    
+    <section id="about">
+      <h5>Get to Know</h5>
+      <h2>About Me</h2>
+      <div className="container about__container">
+        <div className= "about__me">
+          <div className="about__me-image">
+          <img src={chicago} alt="Javis in Chicago" />
+    
+     </div>  
       </div>
-      <div id="myContent">
-        <h2>About Me</h2>
-        <p>Hello, I'm Javis </p>
+      
+      <div className="about_content">
+        <div className="about_cards">
+          
+          <article className='about_card'>
+          <p>Hello, I'm Javis </p>
         <p>
           Most of my life I've dreamed of someday having a career in technology.
           After completing high school, I attended Alabama A&M University where
@@ -18,7 +29,7 @@ function About() {
           was a small child, I have been fascinated with the ins and outs of
           technology and it's been an ever growing passion of mine to someday
           gain all the experience that I would need to grow my expertise.
-        </p>
+        </p> 
 
         <p>
           So, I decided the time is now to take a dive into that arena and aim
@@ -34,6 +45,16 @@ function About() {
         </p>
 
         <p>-Javis</p>
+
+          </article>
+         
+
+      
+      
+    </div>
+        </div>
+       
+       
       </div>
     </section>
   );

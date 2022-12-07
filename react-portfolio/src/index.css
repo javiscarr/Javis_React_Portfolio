@@ -25,7 +25,7 @@ code {
 
 }
 :root {
-    --color-bg: rgb(28, 59, 28);
+    --color-bg: rgb(0, 76, 153);
     --color-bg-variant: #2C5F2DFF;
     --color-primary: #FFE77AFF;
     --color-primary-variant: rgb(202, 180, 79);
@@ -34,7 +34,7 @@ code {
 
     --transition: all 400ms ease;
     
-    --containter-width-lg: 75%;
+    --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
 
@@ -53,14 +53,14 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/x.png);
+    background-image: url(../src/assets/blue.png);
     
 }
 
 /*GENERAL STUFF, LET's GO BABY  */
 
 .container {
-    width: var(--containter-width-lg);
+    width: var(--container-width-lg);
     margin: 0 auto;
 }
 
