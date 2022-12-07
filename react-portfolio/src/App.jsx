@@ -1,22 +1,26 @@
 import "./App.css";
-import Header from "./components/Header";
-import Body from "./components/Body";
+import Header from "./components/header/Header";
+import Nav from "./components/nav/Nav";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import Experience from "./components/experience/Experience";
+import Services from "./components/services/Services";
+import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <main className="main">
-      <Header className="navbarContainer" />
-      <Body className="bodyContainer" />
-      <About className="aboutContainer" />
-      <Projects className="projectsContainer" />
-      <Contact className="contactContainer" />
-      <Footer className="footerContainer" />
-    </main>
-  );
+    <>
+      <Header/>
+      <Nav/>
+      <About/>
+      <Experience/>
+      <Services/>
+      <Portfolio/>
+      <Contact/>
+      <Footer/>
+    </>
+  )
 }
 
 export default App;
