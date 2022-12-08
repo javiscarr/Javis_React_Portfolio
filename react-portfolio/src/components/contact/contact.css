@@ -42,6 +42,10 @@ form {
     
 }
 
+ ::placeholder {
+    color: var(--color-primary-variant)
+ }
+
 
 input, textarea {
     width: 100%;
