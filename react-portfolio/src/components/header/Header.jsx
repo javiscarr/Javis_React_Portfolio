@@ -3,6 +3,7 @@ import './header.css'
 import CTA from './CTA'
 import JC from '../../assets/JC.png'
 import HeaderSocial from './HeaderSocials'
+import Nav from '../nav/Nav'
 
 const Header = () => {
     return (
@@ -17,7 +18,7 @@ const Header = () => {
                     <img src={JC} alt="Javis" />
                 </div>
 
-                <a href='#contact' className='scroll_down'>Scroll Down</a>
+                <Nav/>
             </div>
         </header>
     )
