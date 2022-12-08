@@ -2,7 +2,6 @@ import React from 'react'
 import './header.css'
 import CTA from './CTA'
 import JC from '../../assets/JC.png'
-import HeaderSocial from './HeaderSocials'
 import Nav from '../nav/Nav'
 
 const Header = () => {
@@ -12,7 +11,7 @@ const Header = () => {
                 <h1 className='header_welcome'>Javis Carr</h1>
                 <h5 className='text-light header_welcome'>Software Developer</h5>
                 <CTA />
-                <HeaderSocial />
+               
                 <div className='jc'>
                     <img src={JC} alt="Javis" />
                 </div>
