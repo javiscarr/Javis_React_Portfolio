@@ -1,60 +1,46 @@
-import React from "react";
-import contact from "../images/contact.png";
-import github from "../images/github.png";
-import linkedin from "../images/linkedin.png";
+import React from 'react'
+import './contact.css'
+import {MdMailOutline} from 'react-icons/md'
+import {MdOutlineMessage} from 'react-icons/md'
 
-function Contact() {
+
+const Contact = () => {
+
   return (
-    <div id="contact">
-      <article className="info" id="contactInfo">
-        <h2>Contact Information</h2>
+    <section id='contact'>
+      <h5>Get In Touch</h5>
+      <h2>Contact Me</h2>
 
-        <img
-          src={contact}
-          alt="contact me"
-          id="phone"
-          width="300px"
-          height="150px"
-        ></img>
+      <div className="container contact__container">
+        <div className="contact__options">
+          {/* EMAIL */}
+          <article className="contact__option">
+            <MdMailOutline className="contact__option-icon"/>
+            <h4>Email</h4>
+            <h5>Javis.Carr@gmail.com</h5>
+            <a href="mailto:Javis.Carr@gmail.com" target="_blank">Send a message</a>
+          </article>
+        {/* Messanger */}   
+          <article className="contact__option">
+            <MdOutlineMessage className="contact__option-icon"/>
+            <h4>Messenger</h4>
+            <h5>sarahlabrotlientz.slack.com</h5>
+            <a href="https://jmc-developer.slack.com" target="_blank">Send a message</a>
+          </article>       
 
-        <p>Javis M. Carr</p>
-        <p> Phone: 256-323-1467</p>
-        <p> Email: Javis.Carr@gmail.com</p>
-        <div>
-          <a
-            href="https://github.com/javiscarr"
-            className="social"
-            alt="link to gitHub"
-          >
-            <img
-              src={github}
-              id="logo"
-              alt="github"
-              width="20px"
-              height="20px"
-            />
-            GitHub Account
-          </a>
-          <br></br>
-
-          <a
-            href="https://www.linkedin.com/in/javis-carr-8a584533/"
-            className="social"
-            alt="linked"
-          >
-            <img
-              src={linkedin}
-              id="logo"
-              alt="linkedin"
-              width="20px"
-              height="20px"
-            />
-            Linkedin
-          </a>
         </div>
-      </article>
-    </div>
-  );
+
+        {/* End of CONTACT OPTIONS */}
+
+        <form id='contact-form' className='form'>
+        <input  type="text" name='name'  placeholder='Your Full Name' required />
+        <input  type="email" name='email'  placeholder='Your Email' required />
+        <input  name="message" type='textarea' rows="7" placeholder='Your Message' required></input>
+        <button type='submit' className='btn btn-primary'>Send Message</button>
+        </form>
+      </div>
+    </section>
+  )
 }
 
-export default Contact;
+export default Contact

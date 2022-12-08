@@ -1,10 +1,22 @@
 import React from "react";
+import './footer.css'
+import FooterSocial from "./FooterSocials";
 
-function Footer() {
+
+const Footer = () => {
   return (
     <footer>
-      <p>© Javis M. Carr 2021</p>
+        <div className="container footer_container">
+       <h4 className="copyright">Copyright © Javis M. Carr 2022</h4>
+       <FooterSocial/>
+    </div>
+
     </footer>
+   
+    
+
+
+
   );
 }
 
