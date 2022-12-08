@@ -24,7 +24,7 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineMessage className="contact__option-icon"/>
             <h4>Messenger</h4>
-            <h5>sarahlabrotlientz.slack.com</h5>
+            <h5>jmc-developer.slack.com</h5>
             <a href="https://jmc-developer.slack.com" target="_blank">Send a message</a>
           </article>       
 
